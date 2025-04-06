@@ -1,0 +1,220 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    /* margem 0, fonte sans serif*/
+}
+
+:root {
+    --azul:#32b9cd;
+    --amarelo:#e3b062;
+    /*declarou as variaveis das cores que mais vamos utilizar*/
+
+}
+
+/*HEADER*/
+.header{
+    background-color: black;/*navbar ficou com fundo preto*/
+    border-bottom: 3px solid var(--azul);/* borda embaixo da navbar da cor azul com tamanho 3px*/
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;/*espaço entre os elementos*/
+    align-items: center;/* alinhou os itens no centro*/
+    padding: 0 120px;/*se coloca só ele, da espaco pra tudo
+                        se coloca o 0, da espaço somente nas laterais
+                        se colocar 0 10 120px da um espaço na esquerda*/   
+}
+
+.titulo {
+    color: var(--azul);/*Colocou cor no titulo*/
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between; /*espaço entre os elementos*/
+    color: var(--amarelo);/*deixou na cor amarela*/
+    list-style: none;/*tirar as bolinhas*/
+    width: 300px;/*espaçou os itens da navbar*/
+}
+
+.navbar a{
+    color: var(--amarelo);/*tudo que estiver com a tag a vai ficar amarelo*/
+    text-decoration: none;/*sem decoração*/
+}
+
+.agora{
+    font-weight: bolder;
+}
+
+/*BANNER*/
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+    background-size: cover;/*cobrir todo o espaço*/
+}
+
+.banner .container{
+    width: 100%;/* largura*/
+    height: 100%;/* altura*/
+    display: flex;
+    justify-content: center;/* alinhou na horizontal*/
+    align-items: center;/* alinhou na vertical*/
+}
+
+.banner .container p{
+    width: 170px;/* largura*/
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.banner .container span{
+    font-weight: bolder;/*deixar a tag span bold*/
+}
+
+/*MISSAO, VISAO E VALORES*/
+.social{
+    height: 400px;/*fixo*/
+    width: 100%;/*fluido*/
+    background-color: #dcdcdc;
+}
+
+.social .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;/*alinhou horizontalmente*/
+    align-items: center;/*alinhou verticalmente*/
+}
+
+.boxes{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;/* alinhou o texto*/
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+}
+
+.box h4{
+    margin: 0;
+    margin-top: 10px;
+    color: #e4005a;
+}
+
+
+/*FOOTER*/
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+.footer .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer h4{
+    margin-bottom: 0;
+}
+
+.login {
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display:flex ;
+    height: 625px;
+    font-family: sans-serif;
+}
+
+.login .container{
+    font-size: large;
+    color: #e4005a;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-login{
+    background-color: #dcdcdc;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    align-self: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+
+.formulario{
+    align-items: center;
+    justify-content: center;
+    text-align:start;
+}
+
+.campo{
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.campo input{
+    border-radius: 5px;
+    border-color: var(--azul);
+    border-width: 2px;
+    height: 30px;
+    width: 500px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.botao{
+    background-color: #e4005a;
+    color: white;
+    border-radius: 5px;
+    border: #e4005a;
+    width: 100px;
+    height: 30px;
+    justify-content: space-around;
+    font-size: medium;
+    margin-left: 240px;
+}
+
+.card-cadastro{
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
